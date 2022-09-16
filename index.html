@@ -6,15 +6,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <form class="login-form">
+    <form class="login-form hidden">
         <input required maxlength="10" type="text" placeholder="이름이 무엇입니까?" id="">
         <button>로그인</button>
     </form>
-    <h1 class="greeting hidden"></h1>
+    <h1 class="clock hidden">00:00</h2>
+    <h2 class="greeting hidden"></h1>
+    <div class="quote">
+        <span class="hidden"></span>
+    </div>
+    <form class="todo-form hidden">
+        <input required type="text" placeholder="오늘의 할 일을 입력하세요.">
+    </form>
+    <ul class="todo-list"></ul>
+
+
+    
    
-    <script src="app.js"></script>
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
 </body>
 </html>
