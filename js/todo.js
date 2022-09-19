@@ -3,6 +3,7 @@ const toList = document.querySelector("todo-list");
 const toDoInput = todoForm.querySelector("input");
 var toDos =[];
 
+
 function saveToDos(){
     localStorage.setItem("todos",JSON.stringify(toDos))
 
@@ -22,7 +23,7 @@ function deletToDo (event){
     liRemove.remove();
 
 }
-function re(a,b)
+function re(a)
 {
     if(a.id===b)
     {
@@ -37,7 +38,7 @@ function reTextToDo (event)
     event.target.parentElement.classList.remove("x")
     event.target.parentElement.classList.add("o");
     const checkId=event.target.parentElement.id
-    toDos.forEach(re,checkId);
+    toDos.forEach(re);
     console.log(toDos)
     
     

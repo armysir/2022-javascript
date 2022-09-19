@@ -121,3 +121,20 @@ li button{
     color: white;
     
 }
+.weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    flex-direction: column;
+    top: 100px;
+    right: 35px;
+    border-radius: 20px;
+    width: 15%;
+    height: 30%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.weather span{
+    padding: 15px;
+}

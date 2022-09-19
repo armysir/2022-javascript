@@ -5,7 +5,7 @@ const greeting = document.querySelector(".greeting");
 const clocks = document.querySelector(".clock");
 const todoForms = document.querySelector(".todo-form");
 const qouteds = document.querySelector(".quote span");
-
+const weather = document.querySelector(".weather")
 
 const savedUsername = localStorage.getItem("username");
 
@@ -23,6 +23,7 @@ if(savedUsername ===null)
       clocks.classList.remove("hidden");
       todoForms.classList.remove("hidden");
       qouteds.classList.remove("hidden");
+      weather.classList.remove("hidden");
    
    }
    
@@ -37,6 +38,7 @@ else{
    clocks.classList.remove("hidden");
    todoForms.classList.remove("hidden");
    qouteds.classList.remove("hidden");
+   weather.classList.remove("hidden");
    
   
 
